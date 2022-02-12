@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Focusing">
         <activity
+            android:name=".Help"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
             android:name=".Shop"
             android:exported="false" />
         <activity

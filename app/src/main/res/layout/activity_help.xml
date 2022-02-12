@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pomodoro_help"
+    tools:context=".Help">
+
+    <Button
+        android:id="@+id/btn_instruction"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="INSTRUCTION"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_rate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="RATE APP"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btn_instruction"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

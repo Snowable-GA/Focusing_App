@@ -27,11 +27,29 @@ public class DashBoard extends AppCompatActivity {
             }
         });
 
-        Button btn_Shop = findViewById(R.id.btn_shop);
+        btn_Shop = findViewById(R.id.btn_shop);
         btn_Shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DashBoard.this, Shop.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_Settings = findViewById(R.id.btn_settings);
+        btn_Settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashBoard.this, Settings.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_Help = findViewById(R.id.btn_settings);
+        btn_Help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashBoard.this, Help.class);
                 startActivity(intent);
             }
         });
