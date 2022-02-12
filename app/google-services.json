@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "121823547177",
+    "firebase_url": "https://focusing-app-firebase-default-rtdb.firebaseio.com",
+    "project_id": "focusing-app-firebase",
+    "storage_bucket": "focusing-app-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121823547177:android:81d1b2f300cdad9b3df138",
+        "android_client_info": {
+          "package_name": "com.example.focusing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121823547177-93imfmu1hl4o9b122nila7t21ip8obtf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS_9jxfp-gj2F7U1zN6B2uCmFuh2swYV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121823547177-93imfmu1hl4o9b122nila7t21ip8obtf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

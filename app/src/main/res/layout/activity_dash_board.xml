@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pomodoro_main"
+    tools:context=".DashBoard">
+
+    <Button
+        android:id="@+id/btn_focus"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="FOCUS"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_shop"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SHOP"
+        android:backgroundTint="#FF0000"
+        android:layout_below="@id/btn_focus"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:backgroundTint="#FF0000"
+        android:layout_below="@id/btn_shop"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:backgroundTint="#FF0000"
+        android:layout_below="@id/btn_settings"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

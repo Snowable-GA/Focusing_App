@@ -5,52 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pomodoro_main"
-    tools:context=".MainActivity">
-
+    tools:context=".SignUp">
 
     <EditText
-        android:id="@+id/edt_email"
+        android:id="@+id/edt_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_email2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Enter your email"
         android:textSize="20sp"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        />
 
     <EditText
-        android:id="@+id/edt_password"
+        android:id="@+id/edt_password2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edt_email"
+        android:layout_below="@id/edt_email2"
         android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="20sp"
         android:hint="Enter your password"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_register"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:layout_below="@id/edt_password"
+        android:text="REGISTER"
+        android:layout_below="@id/edt_password2"
         android:backgroundTint="#FF0000"
         android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:id="@+id/btn_signup"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="SIGN UP"
-        android:layout_below="@id/btn_login"
-        android:backgroundTint="#FF0000"
-        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
