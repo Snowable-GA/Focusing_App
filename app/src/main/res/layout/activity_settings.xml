@@ -7,8 +7,8 @@
     android:background="@drawable/pomodoro_settings"
     tools:context=".Settings">
 
-    <Switch
-        android:id="@+id/music"
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sound"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -19,11 +19,11 @@
         android:textSize="20dp"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-    <Switch
+    <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/notification"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/music"
+        android:layout_below="@id/sound"
         android:layout_marginTop="30dp"
         android:checked="true"
         android:gravity="start"
@@ -32,7 +32,7 @@
         android:textSize="20dp"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-    <Switch
+    <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/vibration"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

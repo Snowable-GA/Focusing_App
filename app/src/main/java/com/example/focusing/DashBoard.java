@@ -45,7 +45,7 @@ public class DashBoard extends AppCompatActivity {
             }
         });
 
-        btn_Help = findViewById(R.id.btn_settings);
+        btn_Help = findViewById(R.id.btn_help);
         btn_Help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
