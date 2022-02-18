@@ -1,7 +1,12 @@
 package com.example.focusing;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -25,10 +30,24 @@ public class Focus extends AppCompatActivity {
         countdownText = findViewById(R.id.countdown_text);
         countdownButton = findViewById(R.id.countdown_button);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel("Focus Notification", "Focus Notification", NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
+
         countdownButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Start_and_Stop();
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(Focus.this, "Focus Notification");
+                builder.setContentTitle("FOFO - FOCUS FOREVER!");
+                builder.setContentText("You've just started focusing!");
+                builder.setSmallIcon(R.drawable.ic_launcher_background);
+                builder.setAutoCancel(true);
+
+                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(Focus.this);
+                managerCompat.notify(1, builder.build());
             }
         });
     }
