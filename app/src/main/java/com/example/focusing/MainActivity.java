@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
+    private MediaPlayer player;
     private EditText edt_Email, edt_Password;
     private Button btn_Login, btn_Signup;
 
