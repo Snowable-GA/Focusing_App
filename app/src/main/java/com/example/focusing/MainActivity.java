@@ -1,20 +1,16 @@
 package com.example.focusing;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    private MediaPlayer player;
+//    private MediaPlayer player;
     private EditText edt_Email, edt_Password;
-    private Button btn_Login, btn_Signup;
+    private Button btn_Login, btn_SignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,40 +20,14 @@ public class MainActivity extends AppCompatActivity {
         edt_Email = findViewById(R.id.edt_email);
         edt_Password = findViewById(R.id.edt_password);
         btn_Login = findViewById(R.id.btn_login);
-        btn_Signup = findViewById(R.id.btn_signup);
+        btn_SignUp = findViewById(R.id.btn_signup);
 
-        btn_Login.setOnClickListener(new View.OnClickListener() {
+        btn_SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                GoToDashboard();
+                Intent intent = new Intent(MainActivity.this, SignUp.class);
+                startActivity(intent);
             }
         });
-
-        btn_Signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                GoToRegister();
-            }
-        });
-
-    }
-
-    public void GoToDashboard(){
-        String str_Email = edt_Email.getText().toString().trim();
-        String str_Password = edt_Password.getText().toString().trim();
-
-        User login_user = new User(" ", " ", " ", " ");
-        login_user.setEmail(str_Email);
-        login_user.setPassword(str_Password);
-
-        if(login_user.isValidEmail() && login_user.isValidPassword()){
-            Intent intent = new Intent(this, DashBoard.class);
-            startActivity(intent);
-        }
-    }
-
-    public void GoToRegister(){
-        Intent intent = new Intent(this, SignUp.class);
-        startActivity(intent);
     }
 }

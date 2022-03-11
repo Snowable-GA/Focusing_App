@@ -26,4 +26,14 @@
         android:layout_below="@+id/btn_instruction"
         android:layout_centerHorizontal="true"/>
 
+<!--    <Button-->
+<!--        android:id="@+id/btn_version"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="VERSION"-->
+<!--        android:backgroundTint="#FF0000"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_below="@+id/btn_rate"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
 </RelativeLayout>

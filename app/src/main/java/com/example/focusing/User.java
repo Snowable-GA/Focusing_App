@@ -1,22 +1,10 @@
 package com.example.focusing;
 
-import android.text.TextUtils;
-import android.util.Patterns;
-
 public class User {
 
-    private String ID;
     private String name;
     private String email;
     private String password;
-
-    public String getID() {
-        return ID;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
-    }
 
     public String getName() {
         return name;
@@ -42,19 +30,9 @@ public class User {
         this.password = password;
     }
 
-    public User(String ID, String name, String email, String password){
-        this.ID = ID;
+    public User(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
     }
-
-    public boolean isValidEmail(){
-        return !TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches();
-    }
-
-    public boolean isValidPassword(){
-        return !TextUtils.isEmpty(password) && password.length() >= 6;
-    }
-
 }
