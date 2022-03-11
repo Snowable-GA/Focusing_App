@@ -26,8 +26,6 @@ public class SignUp extends AppCompatActivity {
     private EditText edt_Email, edt_Password, edt_Name;
     private Button btn_Register;
     private FirebaseAuth mAuth;
-    FirebaseDatabase firebaseDatabase;
-    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
