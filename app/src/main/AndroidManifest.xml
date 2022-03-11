@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Focusing">
         <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
             android:name=".RateApp"
             android:exported="false" />
         <activity

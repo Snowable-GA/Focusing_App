@@ -8,18 +8,19 @@ import android.view.View;
 import android.widget.Button;
 
 public class DashBoard extends AppCompatActivity {
-    Button btn_Focus;
-    Button btn_Shop;
-    Button btn_Settings;
-    Button btn_Help;
+    Button btn_focus;
+    Button btn_shop;
+    Button btn_settings;
+    Button btn_help;
+    Button btn_profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
 
-        btn_Focus = findViewById(R.id.btn_focus);
-        btn_Focus.setOnClickListener(new View.OnClickListener() {
+        btn_focus = findViewById(R.id.btn_focus);
+        btn_focus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DashBoard.this, Focus.class);
@@ -27,8 +28,8 @@ public class DashBoard extends AppCompatActivity {
             }
         });
 
-        btn_Shop = findViewById(R.id.btn_shop);
-        btn_Shop.setOnClickListener(new View.OnClickListener() {
+        btn_shop = findViewById(R.id.btn_shop);
+        btn_shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DashBoard.this, Shop.class);
@@ -36,8 +37,8 @@ public class DashBoard extends AppCompatActivity {
             }
         });
 
-        btn_Settings = findViewById(R.id.btn_settings);
-        btn_Settings.setOnClickListener(new View.OnClickListener() {
+        btn_settings = findViewById(R.id.btn_settings);
+        btn_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DashBoard.this, Settings.class);
@@ -45,11 +46,20 @@ public class DashBoard extends AppCompatActivity {
             }
         });
 
-        btn_Help = findViewById(R.id.btn_help);
-        btn_Help.setOnClickListener(new View.OnClickListener() {
+        btn_help = findViewById(R.id.btn_help);
+        btn_help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DashBoard.this, Help.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_profile = findViewById(R.id.btn_profile);
+        btn_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashBoard.this, Profile.class);
                 startActivity(intent);
             }
         });

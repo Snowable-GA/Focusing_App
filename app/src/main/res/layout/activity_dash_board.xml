@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="FOCUS"
         android:backgroundTint="#FF0000"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_centerHorizontal="true"/>
 
     <Button
@@ -43,6 +43,26 @@
         android:text="HELP"
         android:backgroundTint="#FF0000"
         android:layout_below="@id/btn_settings"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="YOUR PROFILE"
+        android:backgroundTint="#FF0000"
+        android:layout_below="@id/btn_help"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT"
+        android:backgroundTint="#FF0000"
+        android:layout_below="@id/btn_profile"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"/>
 
